@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - Sylhet Job</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Sylhet Job</h1>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </div>
+
+  <div class="box">
+    <h2>Register</h2>
+    <form action="login.html">
+      <label>Name</label><br>
+      <input type="text" required>
+
+      <label>Email</label><br>
+      <input type="email" required>
+
+      <label>Password</label><br>
+      <input type="password" required>
+
+      <label>Register as</label><br>
+      <select>
+        <option>Job Seeker</option>
+        <option>Employer</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+    <p>আগে থেকেই account আছে? <a href="login.html">Login</a></p>
+  </div>
+
+</body>
+</html>
