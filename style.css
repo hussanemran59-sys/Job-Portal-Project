@@ -1,51 +1,258 @@
+
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f6;
+    color: #222;
 }
 
+/* Header */
 .header {
-  background-color: green;
-  color: white;
-  padding: 15px;
+    background: #006b32;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header a {
-  color: white;
-  margin-right: 15px;
+.header h1 {
+    font-size: 36px;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #28c75a;
+}
+
+/* Home Page Hero */
+.hero {
+    background: linear-gradient(120deg, #d9f8e4, #ffffff, #c5f2d2);
+    text-align: center;
+    padding: 55px 20px;
+    margin: 25px 5%;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    color: #006b32;
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #087a3b;
+    font-size: 28px;
+    font-style: italic;
+}
+
+/* Latest Jobs */
 .content {
-  padding: 20px;
+    margin: 30px 5%;
+}
+
+.content h2 {
+    background-color: #006b32;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 table {
-  border-collapse: collapse;
-  background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-th, td {
-  border: 1px solid gray;
-  padding: 8px;
+th {
+    background-color: #087a3b;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
 }
 
+td {
+    padding: 12px 15px;
+    font-size: 19px;
+    border: 1px solid #c5dfce;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f6ed;
+}
+
+tr:hover {
+    background-color: #d5f0df;
+}
+
+/* Apply Message */
+.apply-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #dcf7e5;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.apply-message a {
+    color: #008333;
+    font-weight: bold;
+}
+
+/* Login Page */
 .box {
-  width: 300px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  border: 1px solid gray;
+    width: 400px;
+    max-width: 90%;
+    margin: 65px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 90, 40, 0.12);
+    border-top: 5px solid #07863e;
 }
 
-.box input, .box select {
-  width: 100%;
-  padding: 6px;
-  margin-bottom: 10px;
+.box h2 {
+    text-align: center;
+    color: #087a3b;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
+.login-subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+/* Login Form */
+.box label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.box input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbded1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.box input:focus {
+    border-color: #07863e;
+    box-shadow: 0 0 5px rgba(0, 130, 55, 0.2);
+}
+
+/* Login Button */
 .box button {
-  background-color: green;
-  color: white;
-  padding: 8px 16px;
-  border: none;
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    background: linear-gradient(120deg, #087a3b, #20b45a);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box button:hover {
+    background: #005c2b;
+    transform: translateY(-2px);
+}
+
+/* Register Text */
+.register-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-text a {
+    color: #07863e;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #006b32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 4px;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .content {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    .box {
+        margin: 40px auto;
+        padding: 25px;
+    }
 }
