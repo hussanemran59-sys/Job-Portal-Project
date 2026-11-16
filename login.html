@@ -1,31 +1,50 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login - Sylhet Job</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sylhet Job</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="header">
-    <h1>Sylhet Job</h1>
-    <a href="index.html">Home</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-  </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Sylhet Job</h1>
 
-  <div class="box">
-    <h2>Login</h2>
-    <form action="index.html">
-      <label>Email</label><br>
-      <input type="email" required>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#jobs">Find Jobs</a>
+            <a href="login.html" class="active">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </div>
 
-      <label>Password</label><br>
-      <input type="password" required>
+    <!-- Login Box -->
+    <div class="box">
 
-      <button type="submit">Login</button>
-    </form>
-    <p>New to Sylhet Job?<a href="register.html">Register</a></p>
-  </div>
+        <h2>Welcome Back!</h2>
+        <p class="login-subtitle">Login to your Sylhet Job account</p>
+
+        <form action="index.html">
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p class="register-text">
+            New to Sylhet Job?
+            <a href="register.html">Create an Account</a>
+        </p>
+
+    </div>
 
 </body>
 </html>
