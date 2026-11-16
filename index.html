@@ -1,49 +1,74 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sylhet Job</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylhet Job</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="header">
-    <h1>Sylhet Job</h1>
-    <a href="index.html">Home</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-  </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Sylhet Job</h1>
 
-  <div class="content">
-    <h2>Latest jobsss</h2>
-    <table>
-      <tr>
-        <th>Job Title</th>
-        <th>Company</th>
-        <th>Location</th>
-        <th>Deadline</th>
-      </tr>
-      <tr>
-        <td>Web Developer</td>
-        <td>Sylhet Tech Ltd.</td>
-        <td>Sylhet</td>
-        <td>30 Nov 2026</td>
-      </tr>
-      <tr>
-        <td>Accountant</td>
-        <td>Surma Traders</td>
-        <td>Zindabazar</td>
-        <td>25 Nov 2026</td>
-      </tr>
-      <tr>
-        <td>Sales Executive</td>
-        <td>Habiganj Group</td>
-        <td>Habiganj</td>
-        <td>20 Nov 2026</td>
-      </tr>
-    </table>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="#jobs">Find Jobs</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </div>
 
-    <p>Apply করতে হলে আগে <a href="login.html">Login</a> করুন।</p>
-  </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Sylhet Job</h1>
+        <p>Find Your Dream Job Today!</p>
+    </div>
+
+    <!-- Latest Jobs -->
+    <div class="content" id="jobs">
+
+        <h2>Latest Jobs</h2>
+
+        <table>
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Deadline</th>
+            </tr>
+
+            <tr>
+                <td>Web Developer</td>
+                <td>Sylhet Tech Ltd.</td>
+                <td>Sylhet</td>
+                <td>30 Nov 2026</td>
+            </tr>
+
+            <tr>
+                <td>Accountant</td>
+                <td>Surma Traders</td>
+                <td>Zindabazar</td>
+                <td>25 Nov 2026</td>
+            </tr>
+
+            <tr>
+                <td>Sales Executive</td>
+                <td>Habiganj Group</td>
+                <td>Habiganj</td>
+                <td>20 Nov 2026</td>
+            </tr>
+        </table>
+
+        <p class="apply-message">
+            Please <a href="login.html">Login</a> first to apply.
+        </p>
+
+    </div>
+
+   
 
 </body>
 </html>
